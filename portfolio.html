@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manan Sharma - Portfolio</title>
+  <LINk rel="icon" type="image/jpg" href="HOME.jpg" ></LINk>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #ac83ff;
+    }
+    header, nav, section, footer {
+      max-width: 960px;
+      margin: 20px auto;
+      background: #ea92fc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+    }
+    nav li {
+      margin: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    figure {
+      text-align: center;
+      margin: 20px 0;
+    }
+    figcaption {
+      margin-top: 8px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="portfolio.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header with multiple heading levels -->
+  <header>
+    <h1>Manan Sharma's Portfolio</h1>
+    
+    <h4><a href="#education"> Educational Background</a></h4>
+    <h5><a href="#skills"> Skills &amp; Certifications</a></h5>
+    <h6><a href="#Work Experience">Portfolio Projects &amp; Work Experience</a></h6>
+  </header>
+
+  <!-- About Me Section -->
+  <section>
+    <h2>About Me</h2>
+    <p>Hello, I’m Manan Sharma. I completed my schooling from the CBSE board with Class 10 scoring 85% and Class 12 scoring 83%. I am currently in my 4th year of a BTech in Computer Science and Engineering with a CGPA of 6.7. My academic and extra-curricular pursuits have shaped my professional journey, and I’m continuously learning new technologies.</p>
+  </section>
+
+  <!-- Educational Background -->
+  <section id="education">
+    <h2>Educational Background</h2>
+    <ol>
+        <li>
+            <strong>BTech in Computer Science &amp; Engineering:</strong>4th year 
+            <br>
+            <label for="cgpa-range">CGPA:</label>
+            <input type="range" id="cgpa-range" min="0" max="10" step="0.1" value="6.7" readonly tabindex="-1" style="pointer-events: none;">
+            <span>7 / 10</span>
+        </li>
+        <li>
+            <strong>CBSE Class 12:</strong> 
+            <br>
+            <label for="class12-range">PERCENTAGE:</label>
+            <input type="range" id="class12-range" min="0" max="100" value="83" readonly tabindex="-1" style="pointer-events: none;">
+            <span>83 / 100</span>
+        </li>
+        <li>
+            <strong>CBSE Class 10:</strong> 
+            <br>
+            <label for="class10-range">PERCENTAGE  </label>
+            <input type="range" id="class10-range" min="0" max="100" value="85" readonly tabindex="-1" style="pointer-events: none;">
+            <span>85 / 100</span>
+        </li>
+    </ol>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>GitHub</li>
+      <li>JavaScript </li>
+    </ul>
+  </section>
+
+  <!-- Courses and Certifications -->
+  <section>
+    <h2>Courses &amp; Certifications</h2>
+    <ul>
+      <li>C++ Foundation Course – Coding Ninja</li>
+      <li>DSA in C++ – Coder Army (YouTube)</li>
+      <li>Nexus Full Stack Web Development Course</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio Projects/Work Experience Table -->
+  <section id="Work Experience">
+    <h2>Portfolio Projects &amp; Work Experience</h2>
+    <table style="border: 4px solid #000; border-collapse: collapse;">
+      <thead>
+        <tr>
+          <th style="border: 4px solid #000;">Project/Experience</th>
+          <th style="border: 4px solid #000;">Description</th>
+          <th style="border: 4px solid #000;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 4px solid #000;"><strong>IIT JAMMU SUMMER INTERNSHIP PROGRAM</strong></td>
+          <td style="border: 4px solid #000;">A fullstack web development training program with live lectures and projects.</td>
+          <td style="border: 4px solid #000;">In Progress</td>
+        </tr>
+        <tr>
+          <td style="border: 4px solid #000;"><strong>Vital Verifit</strong></td>
+          <td style="border: 4px solid #000;">Vital Verifit is a holistic health platform combining personalized diet and workout plans, engaging wellness blogs, secure user data management, and cutting-edge AR ID verification to revolutionize your fitness experience.</td>
+          <td style="border: 4px solid #000;">Planned</td>
+        </tr>
+      </tbody>
+    </table>
+      
+  </section>
+
+  <!-- Profile Image Section -->
+  <section>
+    <h2>Profile Picture</h2>
+    <figure>
+      <img src="profile pic.jpg" alt="Portrait of Manan Sharma" width="200">
+      <figcaption>Manan Sharma – Aspiring Full Stack Web Developer</figcaption>
+    </figure>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Manan Sharma. All rights reserved.</p>
+  </footer>
+</body>
+</html>

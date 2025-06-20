@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Manan Sharma</title>
+  <LINk rel="icon" type="image/jpg" href="CONTACT ME.jpg" ></LINk>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ac83ff;
+      padding: 20px;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ea92fc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 15px;
+      display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 95%;
+      padding: 10px;
+      border: 3px solid #000000;
+      border-radius: 10px;
+    }
+    fieldset {
+      border: 2px solid #5110e8;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+    legend {
+      padding: 0 5px;
+      font-weight: bold;
+    }
+    .form-group {
+      margin-bottom: 5px;
+    }
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+        background-color: rgb(228, 26, 161);
+      color: #000000;
+      text-decoration:wavy;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Link to Portfolio Page -->
+
+  
+  <main>
+    <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <!-- Internal link back to portfolio page -->
+      <a href="portfolio.html">Back to HOME</a>
+    </nav>
+  </header>
+    <h1></h1>
+    <form action="#" method="post">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <!-- Phone Number Field -->
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      
+    <!-- Date Input Field -->
+    <div class="form-group">
+      <label for="appointment-date">Preferred Appointment Date:</label>
+      <div style="position: relative; display: inline-block; width: 100%;">
+        <input 
+        type="date" 
+        id="appointment-date" 
+        name="appointment_date" 
+        required
+        style="
+          width: 100%;
+          padding: 10px 40px 10px 10px;
+          border: 3px solid #000000;
+          border-radius: 10px;
+          background: #fff url('data:image/svg+xml;utf8,<svg fill=\'%235110e8\' height=\'20\' viewBox=\'0 0 24 24\' width=\'20\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>') no-repeat right 10px center/24px 24px;
+          font-size: 16px;
+          box-sizing: border-box;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          transition: border-color 0.2s;
+        "
+        onfocus="this.style.borderColor='#5110e8'"
+        onblur="this.style.borderColor='#000000'"
+        >
+      </div>
+    </div>
+
+      <!-- Message Field -->
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      
+      <!-- Preferred Contact Methods Checkboxes -->
+      <fieldset>
+        <legend>Preferred Contact Methods:</legend>
+        <label>
+          <input type="checkbox" name="contact_method" value="email"> Email
+        </label>
+        <label>
+          <input type="checkbox" name="contact_method" value="phone"> Phone
+        </label>
+        <label>
+          <input type="checkbox" name="contact_method" value="text"> Text
+        </label>
+      </fieldset>
+      
+      <!-- Inquiry Type Radio Buttons -->
+      <fieldset>
+        <legend>Inquiry Type:</legend>
+        <label>
+          <input type="radio" name="inquiry_type" value="general" checked> General
+        </label>
+        <label>
+          <input type="radio" name="inquiry_type" value="business"> Business
+        </label>
+        <label>
+          <input type="radio" name="inquiry_type" value="support"> Support
+        </label>
+
+        <div class="form-group">
+        <label for="inquiry-priority">Inquiry Priority:</label>
+        <select id="inquiry-priority" name="inquiry_priority" required>
+          <option value="">Select a priority level</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      </fieldset>
+      
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
